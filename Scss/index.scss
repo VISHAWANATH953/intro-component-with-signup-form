@@ -30,6 +30,7 @@
         margin-bottom: 1rem;
     }
     form{
+        box-shadow: .3rem .3rem .4rem .1rem rgba(0, 0, 0, 0.4);
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -44,13 +45,17 @@
                 :focus{
                     outline:none;
                 }
-                &[type="submit"]{
-                    border-radius: .5rem;
-                    border: none;
-                    color: #fff;
-                    padding: 1rem;
-                    background: $Green;
-                }
+            }
+            button{
+                text-transform: uppercase;
+                width: 90%;
+                border-radius: .5rem;
+                border: none;
+                color: #fff;
+                padding: 1rem;
+                background: $Green;
+                outline:none;
+                
             }
             p{
                 color: $GrayishBlue;

@@ -91,6 +91,8 @@ body {
 }
 
 .form form {
+  -webkit-box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,12 +120,15 @@ body {
   outline: none;
 }
 
-.form form input[type="submit"] {
+.form form button {
+  text-transform: uppercase;
+  width: 90%;
   border-radius: .5rem;
   border: none;
   color: #fff;
   padding: 1rem;
   background: #38cc8c;
+  outline: none;
 }
 
 .form form p {
