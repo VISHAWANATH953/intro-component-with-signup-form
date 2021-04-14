@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  background: #ff7a7a url("../images/bg-intro-desktop.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 1.5rem;
+  font-family: 'Poppins';
+}
+
+:-ms-input-placeholder {
+  padding-left: 1.5rem;
+  font-family: 'Poppins';
+}
+
+::-ms-input-placeholder {
+  padding-left: 1.5rem;
+  font-family: 'Poppins';
+}
+
+::placeholder {
+  padding-left: 1.5rem;
+  font-family: 'Poppins';
+}
+
+.info, .form {
+  width: 49vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.info h1, .info p {
+  color: #fff;
+  margin-left: 15rem;
+}
+
+.info h1 {
+  font-size: 5rem;
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+.form #blue {
+  font-size: 1.1rem;
+  color: #fff;
+  background: #6055a5;
+  padding: 1rem 6.5rem;
+  margin-bottom: 1rem;
+}
+
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: #fff;
+  height: 60vh;
+  border-radius: .5rem;
+}
+
+.form form input {
+  outline: none;
+  width: 90%;
+  height: 10%;
+}
+
+.form form input :focus {
+  outline: none;
+}
+
+.form form input[type="submit"] {
+  border-radius: .5rem;
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  background: #38cc8c;
+}
+
+.form form p {
+  color: #b9b6d3;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.form form p a {
+  color: #ff7a7a;
+}
+
+footer {
+  font-size: 1.1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 762px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    background: #ff7a7a url("../images/bg-intro-mobile.png") center no-repeat;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .info, .form {
+    text-align: center;
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info {
+    height: 45vh;
+  }
+  .info h1, .info p {
+    margin: 0;
+  }
+  .form {
+    height: 90vh;
+  }
+  .form form, .form #blue {
+    width: 90%;
+  }
+  .form form input, .form #blue input {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

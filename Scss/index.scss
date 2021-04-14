@@ -1,0 +1,74 @@
+@import 'partical/_var';
+@import 'partical/_utility';
+
+.info,.form{
+    width: 49vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+.info{
+    h1,p{
+        color: #fff;
+        margin-left: 15rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+.form{
+    #blue{
+        font-size: 1.1rem;
+        color: #fff;
+        background: $Blue;
+        padding: 1rem 6.5rem;
+        margin-bottom: 1rem;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        background: #fff;
+        height: 60vh;
+        border-radius: .5rem;
+            input{
+                outline:none;
+                width: 90%;
+                height: 10%;
+                :focus{
+                    outline:none;
+                }
+                &[type="submit"]{
+                    border-radius: .5rem;
+                    border: none;
+                    color: #fff;
+                    padding: 1rem;
+                    background: $Green;
+                }
+            }
+            p{
+                color: $GrayishBlue;
+                width: 90%;
+                font-size: 1.1rem;
+                a{
+                    color: $Red;
+                }
+            }
+    }
+}
+footer{
+    font-size: 1.1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@import 'partical/_media';

@@ -1,0 +1,32 @@
+@media screen and(max-width:762px) {
+    html{
+        font-size: 55%;
+    }
+    body{
+        background: $Red url('../images/bg-intro-mobile.png') center no-repeat;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column wrap;
+    }
+    .info,.form{
+        text-align: center;
+        width: 100vw;
+        align-items: center;
+    }
+    .info{
+        height: 45vh;
+        h1,p{
+            margin:0;
+        }
+    }
+    .form{
+        height: 90vh;
+        form,#blue{
+            width: 90%;
+            input{
+                width: 85%;
+            }
+        }
+    }
+
+}
